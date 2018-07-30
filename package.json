@@ -1,0 +1,69 @@
+{
+  "name": "zetherz-ERC677",
+  "version": "1.0.0",
+  "description": "ERC677 implementation using openzeppelin-solidity",
+  "files": [
+    "contracts",
+    "test"
+  ],
+  "scripts": {
+    "clean": "rm -rf coverage* && rm -rf build",
+    "cov-fix": "npm run clean; npm run coverage; npm run clean",
+    "test": "scripts/test.sh",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint:sol": "solium -d .",
+    "lint:sol:fix": "solium -d . --fix",
+    "lint:all": "npm run lint && npm run lint:sol",
+    "lint:all:fix": "npm run lint:fix && npm run lint:sol:fix",
+    "console": "truffle console",
+    "coverage": "scripts/coverage.sh",
+    "version": "scripts/version.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zetherz/zetherz-ERC677.git"
+  },
+  "keywords": [
+    "ethereum",
+    "solidity",
+    "openzeppelin",
+    "ERC677",
+    "solidity",
+    "ethereum",
+    "smart",
+    "contracts",
+    "security",
+    "zeppelin"
+  ],
+  "author": "zetherz <dev@zetherz.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zetherz/zetherz-ERC677/issues"
+  },
+  "homepage": "https://github.com/zetherz/zetherz-ERC677",
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.0.0",
+    "chai-bignumber": "^2.0.2",
+    "coveralls": "^3.0.2",
+    "dotenv": "^4.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "ethereumjs-util": "^5.2.0",
+    "ethjs-abi": "^0.2.1",
+    "ganache-cli": "6.1.0",
+    "openzeppelin-solidity": "^1.11.0",
+    "solidity-coverage": "^0.5.5",
+    "solium": "^1.1.8",
+    "truffle": "^4.1.13",
+    "truffle-hdwallet-provider": "0.0.5",
+    "web3-utils": "^1.0.0-beta.35",
+    "zetherz-ERC223": "github:zetherz/zetherz-ERC223"
+  }
+}
